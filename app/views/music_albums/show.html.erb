@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @music_album.name %>
+</p>
+
+<%= image_tag @music_album.image_cover %>
+
+<%= link_to 'Edit', edit_music_album_path(@music_album) %> |
+<%= link_to 'Back', music_albums_path %>
