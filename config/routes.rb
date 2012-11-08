@@ -2,7 +2,7 @@ require 'grape'
 
 TbTestapp::Application.routes.draw do
   resources :music_albums
-    mount Album::API => "/"
+    mount Album::API => "/api"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
